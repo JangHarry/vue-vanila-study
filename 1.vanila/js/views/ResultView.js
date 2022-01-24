@@ -18,8 +18,7 @@ ResultView.render = function (data = []) {
     this.show()
 }
 
-ResultView.getSearchResultHtml = function (data) {
-    console.log(data);
+ResultView.getSearchResultHtml = function (data) {    
     return data.reduce((html, item) => {        
         html += this.getSearchItemHtml(item)
         return html
